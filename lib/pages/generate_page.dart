@@ -45,7 +45,7 @@ class _GeneratePageState extends State<GeneratePage> {
     _streamSubscription = _stream.listen((data) {
       setState(() {
         _content += data['content'];
-        _totalSectionsCount = data['sectionsCount'] + 1;
+        _totalSectionsCount = data['sectionsCount'] ;
         _sectionsCount++;
         _firstDataReceived = true;
       });
